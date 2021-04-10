@@ -6,7 +6,7 @@
 
   <groupId>com.wutsi.tracing</groupId>
   <artifactId>wutsi-tracing</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <properties>
     <jacoco.threshold.line>0.80</jacoco.threshold.line>
