@@ -1,6 +1,5 @@
 package com.wutsi.tracing
 
-import org.slf4j.MDC
 import javax.servlet.Filter
 import javax.servlet.FilterChain
 import javax.servlet.FilterConfig
@@ -15,10 +14,7 @@ class TracingFilter(
         resp: ServletResponse,
         chain: FilterChain
     ) {
-        MDC.put("client_id", tracingContext.clientId())
-        MDC.put("device_id", tracingContext.deviceId())
-        MDC.put("request_id", tracingContext.requestId())
-
+        TracingMDCHelper.initMDC(tracingContext)
         chain.doFilter(req, resp)
     }
 
