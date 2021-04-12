@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse
 
 internal class TracingFilterTest {
     private lateinit var tc: TracingContext
-    private lateinit var tracingContextProvider: TracingContextProvider
     private lateinit var filter: Filter
     private lateinit var request: HttpServletRequest
     private lateinit var response: HttpServletResponse
@@ -26,12 +25,9 @@ internal class TracingFilterTest {
         request = mock()
         response = mock()
         chain = mock()
-
         tc = mock()
-        tracingContextProvider = mock()
-        doReturn(tc).whenever(tracingContextProvider).get()
 
-        filter = TracingFilter(tracingContextProvider)
+        filter = TracingFilter(tc)
     }
 
     @Test

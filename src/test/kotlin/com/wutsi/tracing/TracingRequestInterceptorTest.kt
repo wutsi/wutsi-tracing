@@ -10,16 +10,12 @@ import org.junit.jupiter.api.Test
 
 internal class TracingRequestInterceptorTest {
     private lateinit var tc: TracingContext
-    private lateinit var tracingContextProvider: TracingContextProvider
     private lateinit var interceptor: TracingRequestInterceptor
 
     @BeforeEach
     fun setUp() {
         tc = mock()
-        tracingContextProvider = mock()
-        doReturn(tc).whenever(tracingContextProvider).get()
-
-        interceptor = TracingRequestInterceptor("foo", tracingContextProvider)
+        interceptor = TracingRequestInterceptor("foo", tc)
     }
 
     @Test

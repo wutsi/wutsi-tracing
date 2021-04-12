@@ -8,17 +8,16 @@ import javax.servlet.ServletRequest
 import javax.servlet.ServletResponse
 
 class TracingFilter(
-    private val tracingContextProvider: TracingContextProvider
+    private val tracingContext: TracingContext
 ) : Filter {
     override fun doFilter(
         req: ServletRequest,
         resp: ServletResponse,
         chain: FilterChain
     ) {
-        val tc = tracingContextProvider.get()
-        MDC.put("client_id", tc.clientId())
-        MDC.put("device_id", tc.deviceId())
-        MDC.put("request_id", tc.requestId())
+        MDC.put("client_id", tracingContext.clientId())
+        MDC.put("device_id", tracingContext.deviceId())
+        MDC.put("request_id", tracingContext.requestId())
 
         chain.doFilter(req, resp)
     }
