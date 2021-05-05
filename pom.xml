@@ -17,13 +17,13 @@
     <common-lang.version>2.4</common-lang.version>
 
     <feign.version>11.2</feign.version>
-    <javax.servlet.version>3.1.0</javax.servlet.version>
+    <javax.servlet.version>4.0.1</javax.servlet.version>
     <junit.version>5.7.1</junit.version>
     <klint.version>0.41.0</klint.version>
     <kotlin.version>1.5.0</kotlin.version>
     <kotlin-mockito.version>2.2.0</kotlin-mockito.version>
-    <slf4j.version>1.7.29</slf4j.version>
-    <spring.version>5.3.4</spring.version>
+    <slf4j.version>1.7.30</slf4j.version>
+    <spring.version>5.3.6</spring.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <kotlin.code.style>official</kotlin.code.style>
@@ -164,7 +164,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.6.0</version>
+        <version>3.0.0</version>
         <configuration>
           <mainClass>MainKt</mainClass>
         </configuration>
@@ -175,7 +175,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
-        <version>1.7</version>
+        <version>3.0.0</version>
         <executions>
           <execution>
             <id>ktlint</id>
@@ -227,7 +227,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.2</version>
+        <version>0.8.7</version>
         <executions>
           <execution>
             <id>default-prepare-agent</id>
