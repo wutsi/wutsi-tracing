@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wutsi.tracing</groupId>
   <artifactId>wutsi-tracing</artifactId>
-  <version>1.5.0-SNAPSHOT</version>
+  <version>1.5.0</version>
 
   <properties>
     <jacoco.threshold.line>0.88</jacoco.threshold.line>
@@ -110,7 +108,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/wutsi/wutsi-tracing.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>wutsi-tracing-1.5.0</tag>
   </scm>
 
   <distributionManagement>
@@ -182,12 +180,11 @@
             <phase>validate</phase>
             <configuration>
               <target name="ktlint">
-                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main"
-                      classpathref="maven.plugin.classpath">
-                  <arg value="src/**/*.kt"/>
+                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                  <arg value="src/**/*.kt" />
                   <!-- to generate report in checkstyle format prepend following args: -->
-                  <arg value="--reporter=plain"/>
-                  <arg value="--reporter=checkstyle,output=${project.build.directory}/ktlint.xml"/>
+                  <arg value="--reporter=plain" />
+                  <arg value="--reporter=checkstyle,output=${project.build.directory}/ktlint.xml" />
 
                   <!-- see https://github.com/pinterest/ktlint#usage for more -->
                 </java>
@@ -201,10 +198,9 @@
             <id>ktlint-format</id>
             <configuration>
               <target name="ktlint">
-                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
-                  <arg value="-F"/>
-                  <arg value="src/**/*.kt"/>
+                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                  <arg value="-F" />
+                  <arg value="src/**/*.kt" />
                 </java>
               </target>
             </configuration>
