@@ -4,7 +4,7 @@
 
   <groupId>com.wutsi.tracing</groupId>
   <artifactId>wutsi-tracing</artifactId>
-  <version>1.5.1-SNAPSHOT</version>
+  <version>1.5.2-SNAPSHOT</version>
 
   <properties>
     <jacoco.threshold.line>0.88</jacoco.threshold.line>
