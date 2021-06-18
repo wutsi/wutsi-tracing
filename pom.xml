@@ -20,7 +20,7 @@
     <klint.version>0.41.0</klint.version>
     <kotlin.version>1.5.10</kotlin.version>
     <kotlin-mockito.version>2.2.0</kotlin-mockito.version>
-    <slf4j.version>1.7.30</slf4j.version>
+    <slf4j.version>1.7.31</slf4j.version>
     <spring.version>5.3.8</spring.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
