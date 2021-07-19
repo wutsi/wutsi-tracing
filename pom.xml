@@ -14,7 +14,7 @@
     <!-- Library versions - in ALPHABETICAL ORDER-->
     <common-lang.version>2.4</common-lang.version>
 
-    <feign.version>11.2</feign.version>
+    <feign.version>11.3</feign.version>
     <javax.servlet.version>4.0.1</javax.servlet.version>
     <junit.version>5.7.2</junit.version>
     <klint.version>0.41.0</klint.version>
