@@ -21,7 +21,7 @@
     <kotlin.version>1.5.31</kotlin.version>
     <kotlin-mockito.version>2.2.0</kotlin-mockito.version>
     <slf4j.version>1.7.32</slf4j.version>
-    <spring.version>5.3.13</spring.version>
+    <spring.version>5.3.27</spring.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <kotlin.code.style>official</kotlin.code.style>
