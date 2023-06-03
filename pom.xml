@@ -4,7 +4,7 @@
 
   <groupId>com.wutsi.tracing</groupId>
   <artifactId>wutsi-tracing</artifactId>
-  <version>1.5.40-SNAPSHOT</version>
+  <version>1.5.40</version>
 
   <properties>
     <jacoco.threshold.line>0.88</jacoco.threshold.line>
@@ -108,7 +108,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/wutsi/wutsi-tracing.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>wutsi-tracing-1.5.40</tag>
   </scm>
 
   <distributionManagement>
